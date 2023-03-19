@@ -27,6 +27,7 @@ class Home {
         this.youtubebtn();
         this.discordbtn();
         this.twittersitebtn();
+        this.creditsbtn();
         this.serverbtn();
     }
 
@@ -102,6 +103,10 @@ class Home {
     async twittersitebtn() {
         document.querySelector('.twitter').addEventListener('click', async() => {
             require('electron').shell.openExternal("https://twitter.com/DeathPastSMP")
+        })}
+    async creditsbtn() {
+        document.querySelector('.credits').addEventListener('click', async() => {
+            require('electron').shell.openExternal("https://deathtimelaunchercore.000webhostapp.com/credits.docx")
         })}
     async serverbtn() {
         document.querySelector('.server').addEventListener('click', async() => {
