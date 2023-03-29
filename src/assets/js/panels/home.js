@@ -239,7 +239,7 @@ class Home {
             playersConnected.textContent = serverPing.playersConnect;
         } else if (serverPing.error) {
             nameServer.textContent = 'Servidor no disponible';
-            serverMs.innerHTML = `<span class="red">Hors ligne</span>`;
+            serverMs.innerHTML = `<span class="red">Fuera de linea</span>`;
         }
     }
 
@@ -254,7 +254,7 @@ class Home {
         let year = date.getFullYear()
         let month = date.getMonth() + 1
         let day = date.getDate()
-        let allMonth = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+        let allMonth = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
         return { year: year, month: allMonth[month - 1], day: day }
     }
 }
